@@ -1,5 +1,5 @@
 @import "/page/header/header.css";
-
+@import "/page/main/description/description.css";
 
 .page {
   min-width: 1100px;
