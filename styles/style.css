@@ -1,6 +1,9 @@
-@import "/page/header/header.css";
-@import "/page/main/description/description.css";
-
+@import "/page/main/digits/digits.css";
+h1, p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,4 +13,178 @@
   margin: 0;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: -3;
+}
+
+.logo_place_header {
+  width: 228px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background: url("../images/logo_place_header.svg");
+}
+
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  margin: auto 0 auto 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  cursor: pointer;
+}
+
+.header__link:after {
+  content: "→";
+}
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: -2;
+}
+
+.main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/header-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Main - Description */
+.two-columns {
+  display: flex;
+  margin: 100px auto 100px auto;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.paragraph_second {
+  margin: 30px 0 30px 0;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+/* Main - Digits */
+.digits {
+  margin: 100px auto 100px auto;
+}
+
+.section-title {
+  margin: 0 auto 20px auto;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  margin: 0 auto 0 auto;
+  padding-top: 60px;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.table__spacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table__first-row {
+  margin-bottom: 60px;
+}
+
+.table__cell {
+  width: 250px;
+  padding: 0;
+  display: inline;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__bank {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
 }
