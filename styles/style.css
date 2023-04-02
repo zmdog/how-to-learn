@@ -1,9 +1,10 @@
-@import "/page/main/digits/digits.css";
-h1, p {
+h1, h2, h3, p, a, ul {
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  padding: 0;
 }
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -23,12 +24,14 @@ h1, p {
   display: flex;
   position: relative;
   background-color: #f2f2f2;
-  z-index: -3;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
 }
 
 .logo_place_header {
-  width: 228px;
-  height: 32px;
   position: absolute;
   top: 30px;
   left: 64px;
@@ -41,6 +44,7 @@ h1, p {
   font-size: 102px;
   font-weight: 600;
   margin: auto 0 auto 64px;
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -52,12 +56,12 @@ h1, p {
   left: 64px;
   bottom: 30px;
   margin: 0;
+  z-index: 1;
 }
 
 .header__link {
   text-decoration: none;
   color: #2f80ed;
-  cursor: pointer;
 }
 
 .header__link:after {
@@ -71,7 +75,6 @@ h1, p {
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: -2;
 }
 
 .main-illustration {
@@ -83,13 +86,16 @@ h1, p {
   background-image: url("../images/header-image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
 }
 
 /* Main - Description */
+.description {
+  margin-top: 100px;
+}
+
 .two-columns {
   display: flex;
-  margin: 100px auto 100px auto;
+  margin: 0 auto 0 auto;
   width: 80%;
   justify-content: space-between;
 }
@@ -125,7 +131,7 @@ h1, p {
 
 /* Main - Digits */
 .digits {
-  margin: 100px auto 100px auto;
+  margin: 100px 0 100px 0;
 }
 
 .section-title {
@@ -148,8 +154,7 @@ h1, p {
 
 .table {
   width: 1100px;
-  margin: 0 auto 0 auto;
-  padding-top: 60px;
+  margin: 60px auto 0 auto;
   table-layout: fixed;
   border-spacing: 0;
 }
@@ -188,3 +193,190 @@ h1, p {
   font-weight: normal;
   margin-top: 20px;
 }
+
+/* Main - Feynman */
+.feynman {
+  display: flex;
+  flex-direction: column;
+  height: 890px;
+  background: url("../images/feynman.png") no-repeat bottom left #f2f2f2;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 100px auto 70px auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link:after {
+  content: "→";
+}
+
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  color: #2f80ed;
+  cursor: pointer;
+}
+
+/* Main - Kaufman */
+.kaufman {
+  padding: 90px 0 90px 0;
+  background-color: #1f1f1f;
+  color: #fff;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.section-title_theme_dark {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  width: 60%;
+  margin: auto auto 20px auto;
+  text-align: center;
+}
+
+.section-subtitle_theme_dark {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.table_theme_dark {
+  margin-top: 80px;
+}
+
+.table__first-row_theme_dark {
+  margin-bottom: 80px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle {
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Main - Kaufman */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 350px;
+  padding: 60px 0 40px 0;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.footer__columns {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 771px;
+}
+
+.logo_place_footer {
+  background: url("../images/logo_place_footer.svg");
+}
+
+.footer__author {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__author:before {
+  content: "© ";
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.footer__column-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column-link:before {
+  margin-right: 10px;
+  height: 16px;
+  vertical-align: middle;
+  line-height: 16px;
+  display: inline-block;
+}
+
+.footer__column-yt:before {
+  content: url("../images/youtube-icon.svg");
+}
+
+.footer__column-vk:before {
+  content: url("../images/vk_color_white.svg");
+}
+
+.footer__column-tt:before {
+  content: url("../images/tiktok-icon.svg");
+}
+
