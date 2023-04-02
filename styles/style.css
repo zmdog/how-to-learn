@@ -223,18 +223,15 @@ h1, h2, h3, p, a, ul {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-}
-
-.feynman__link:after {
-  content: "→";
-}
-
-.feynman__link {
   position: absolute;
   right: 48px;
   top: 50%;
   color: #2f80ed;
   cursor: pointer;
+}
+
+.feynman__link:after {
+  content: "→";
 }
 
 /* Main - Kaufman */
