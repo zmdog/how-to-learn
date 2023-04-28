@@ -1,321 +1,101 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+/* Animation */
+@import url("/page/rotation/rotation.css");
 
+/* Section-Title */
+@import url("/page/content/section-title/section-title.css");
 
-}
+/* Link */
+@import url("/page/link/link.css");
+
+/* Section-Title */
+@import url("/page/logo/logo.css");
+@import url("/page/logo/place/logo_place_header.css");
+@import url("/page/logo/place/logo_place_footer.css");
+
+/* Section-Subtitle */
+@import url("/page/content/section-subtitle/section-subtitle.css");
+
+/* Two-Columns */
+@import url("/page/content/two-columns/two-columns.css");
+@import url("/page/content/two-columns/__brief/two-columns__brief.css");
+@import url("/page/content/two-columns/__main-text/two-columns__main-text.css");
+@import url("/page/content/two-columns/__main-text/__paragraph/two-columns__paragraps.css");
+@import url("/page/content/two-columns/__main-text/__paragraph/__span-accent/two-columns__span-accent.css");
+
+/* Table */
+@import url("/page/content/table/table.css");
+@import url("/page/content/table/__cell/table__cell.css");
+@import url("/page/content/table/__cell/__heading/table__heading.css");
+@import url("/page/content/table/__cell/__heading/_theme/table__heading_theme_dark.css");
+@import url("/page/content/table/__cell/__text/table__text.css");
+@import url("/page/content/table/__cell/__text/_theme/table__text_theme_dark.css");
+@import url("/page/content/table/__cell/_theme/table__cell_theme_dark.css");
+
+/* Body */
+@import url("/page/page.css");
 
 /* Header */
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  display: flex;
-  position: relative;
-  background-color: #f2f2f2;
-  align-items: center;
-}
+@import url("/page/header/header.css");
+@import url("/page/header/__main-illustration/header__main-illustration.css");
+@import url("/page/header/__square-pic/header__square-pic.css");
+@import url("/page/header/__subtitle/header__subtitle.css");
+@import url("/page/header/__title/header__title.css");
 
-.logo {
-  width: 228px;
-  height: 32px;
-}
+/* Content_Description*/
+@import url("/page/content/description/description.css");
 
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  background: url("../images/logo_place_header.svg");
-}
+/* Content_Techniques*/
+@import url("/page/content/techniques/techniques.css");
+@import url("/page/content/techniques/cards/cards.css");
+@import url("/page/content/techniques/cards/__item/cards__item.css");
+@import url("/page/content/techniques/cards/__item/__description/cards__description.css");
+@import url("/page/content/techniques/cards/__item/__image/cards__image.css");
+@import url("/page/content/techniques/cards/__item/__title/cards__title.css");
 
-.header__title {
-  max-width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: 600;
-  margin: 0 0 0 64px;
-  z-index: 1;
-}
+/* Content-Video */
+@import url("/page/content/video/video.css");
+@import url("/page/content/video/__iframes/video__iframes.css");
 
-.header__subtitle {
-  position: absolute;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  width: 388px;
-  left: 64px;
-  bottom: 30px;
-  margin: 0;
-  z-index: 1;
-}
+/* Content-Oakley */
+@import url("/page/content/oakley/oakley.css");
 
-.header__link {
-  color: #2f80ed;
-}
+/* Content_Feynman*/
+@import url("/page/content/feynman/feynman.css");
+@import url("/page/content/feynman/__link/feynman__link.css");
+@import url("/page/content/feynman/__subtitle/feynman__subtitle.css");
+@import url("/page/content/feynman/__title/feynman__title.css");
 
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  right: 0;
-  top: 64px;
-}
+/* Content_Digits*/
+@import url("/page/content/digits/digits.css");
 
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+/* Content-Khan */
+@import url("/page/content/khan/khan.css");
+@import url("/page/content/khan/__container/khan__container.css");
+@import url("/page/content/khan/__container/__author/khan__author.css");
+@import url("/page/content/khan/__container/__book-container/khan__book-container.css");
+@import url("/page/content/khan/__container/__book-container/__book-pic/khan__book-pic.css");
+@import url("/page/content/khan/__container/__book-container/__buy-link/khan__buy-link.css");
+@import url("/page/content/khan/__container/__quote/khan__quote.css");
+@import url("/page/content/khan/__container/__quote-author/khan__quote-author.css");
+@import url("/page/content/khan/__container/__quote-author-subline/khan__quote-author-subline.css");
+@import url("/page/content/khan/__container/__title/khan__title.css");
 
-/* Main - Description */
-.description {
-  margin-top: 100px;
-}
+/* Content_Kaufman*/
+@import url("/page/content/kaufman/kaufman.css");
+@import url("/page/content/kaufman/__triangle/kaufman__triangle.css");
 
-.two-columns {
-  display: flex;
-  margin: 0 auto;
-  width: 80%;
-  justify-content: space-between;
-}
+/* Content_Resources*/
+@import url("/page/content/resources/resources.css");
+@import url("/page/content/resources/__logo-zone/resources__logo-zone.css");
+@import url("/page/content/resources/__logo-zone/__link/resources__link.css");
 
-.two-columns__brief {
-  width: 175px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: #2f80ed;
-  margin: 0;
-}
-
-.two-columns__main-text {
-  display: flex;
-  width: 80%;
-  min-width: 784px;
-  gap: 30px;
-  flex-direction: column;
-}
-
-.two-columns__paragraph {
-  margin: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.two-columns__span-accent {
-  font-weight: 600;
-}
-
-/* Main - Digits */
-.digits {
-  margin: 100px 0;
-}
-
-.section-title {
-  margin: 0 auto 20px auto;
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
-}
-
-.section-subtitle {
-  margin: auto;
-  width: 60%;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  position: relative;
-  z-index: 1;
-}
-
-.table {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  width: 1100px;
-  margin: auto;
-  padding: 0;
-  list-style: none;
-}
-
-.table__cell {
-  width: 250px;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Main - Feynman */
-.feynman {
-  display: flex;
-  flex-direction: column;
-  min-height: 890px;
-  background: url("../images/feynman.png") no-repeat bottom left #f2f2f2;
-  position: relative;
-}
-
-.feynman__title {
-  width: 648px;
-  margin: 100px auto 70px auto;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-}
-
-.feynman__subtitle {
-  text-align: center;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.feynman__link {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-/* Main - Kaufman */
-.kaufman {
-  padding: 90px 0;
-  background-color: #1f1f1f;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  margin-top: 80px;
-}
-
-.table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  position: inherit;
-  z-index: 1;
-}
-
-.kaufman__triangle {
-  right: -210px;
-  top: 0;
-  width: 877px;
-  height: 877px;
-  position: absolute;
-  background: url("../images/kaufman-triangle.svg") no-repeat;
-  background-size: contain;
-}
-
-/* Main - Kaufman */
-.footer {
-  display: flex;
-  justify-content: space-around;
-  min-height: 350px;
-  box-sizing: border-box;
-  padding: 60px 0 40px 0;
-  background-color: #1f1f1f;
-  color: white;
-}
-
-.footer__columns {
-  width: 90%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__column {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  justify-content: space-between;
-}
-
-.logo_place_footer {
-  background: url("../images/logo_place_footer.svg");
-}
-
-.footer__author {
-  bottom: 18px;
-  left: 0;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 18px 0;
-}
-
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-.footer__column-links {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 16px;
-  padding: 0;
-  list-style: none;
-}
-
-.footer__column-link {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-}
-
-.footer__social-icon {
-  margin-right: 10px;
-}
+/* Footer */
+@import url("/page/footer/footer.css");
+@import url("/page/footer/__columns/footer__columns.css");
+@import url("/page/footer/__columns/__column/footer__column.css");
+@import url("/page/footer/__columns/__column/__author/footer__author.css");
+@import url("/page/footer/__columns/__column/__column-heading/footer__column-heading.css");
+@import url("/page/footer/__columns/__column/__column-links/footer__column-links.css");
+@import url("/page/footer/__columns/__column/__column-links/__column-link/footer__column-link.css");
+@import url("/page/footer/__columns/__column/__column-links/__column-link/__social-icon/footer__social-icon.css");
+@import url("/page/footer/__columns/__column/_content/footer__column_content_copyright.css");
