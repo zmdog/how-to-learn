@@ -4,6 +4,6 @@
   width: 877px;
   height: 877px;
   position: absolute;
-  background: url("http://localhost:8080/images/kaufman-triangle.svg") no-repeat;
+  background: url("../../../images/kaufman-triangle.svg") no-repeat;
   background-size: contain;
 }
